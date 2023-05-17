@@ -41,9 +41,9 @@ is_correct = check_answer(guess, a_follower_account, b_follower_account)
 #Give user feedback on their guess
 if is_correct:
     score +=1
-    print("You are right")
+    print(f"You are right! Current score: {score}.")
 else:
-    print(f"Sorry, that is wrong.  Final score is: {score}")
+    print(f"Sorry, that is wrong.  Final score: {score}.")
 #Score keeping
 
 #Make the game repetable
