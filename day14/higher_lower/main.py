@@ -20,12 +20,15 @@ def check_answer(guess,a_followers, b_followers):
 print(logo)
 score = 0
 game_should_continue = True
+account_b = random.choice(data)
 
 #Make the game repetable
 while game_should_continue:
-
     #Generate a random account from the game data
-    account_a = random.choice(data)
+
+    
+    #Making account at position B become the next account at position A
+    account_a = account_b
     account_b = random.choice(data)
     if account_a == account_b:
         account_b = random.choice(data)
@@ -48,10 +51,10 @@ while game_should_continue:
         score +=1
         print(f"You are right! Current score: {score}.")
     else:
+        game_should_continue = False
         print(f"Sorry, that is wrong.  Final score: {score}.")
 
 
 
-#Making account at position B become the next account at position A
 
 #Clear the screen
