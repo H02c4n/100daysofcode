@@ -23,7 +23,7 @@ print(vs)
 print(f"Compare B: {format_data(account_b)}")
 
 #Ask user for a guess
-
+guess = input("Who has more followers? Type 'A' or 'B': ").lower()
 #Check if user is correct
 
 #Get follower count of each account
