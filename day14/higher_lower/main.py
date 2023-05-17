@@ -19,34 +19,38 @@ def check_answer(guess,a_followers, b_followers):
 #Display logo
 print(logo)
 score = 0
-#Generate a random account from the game data
-account_a = random.choice(data)
-account_b = random.choice(data)
-if account_a == account_b:
-    account_b = random.choice(data)
-#Format the account data into printable format
-print(f"Compare A: {format_data(account_a)}")
-print(vs)
-print(f"Compare B: {format_data(account_b)}")
-
-#Ask user for a guess
-guess = input("Who has more followers? Type 'A' or 'B': ").lower()
-#Check if user is correct
-
-#Get follower count of each account
-a_follower_account = account_a["follower_count"]
-b_follower_account = account_b["follower_count"]
-#Use if statement to check if user is correct
-is_correct = check_answer(guess, a_follower_account, b_follower_account)
-#Give user feedback on their guess
-if is_correct:
-    score +=1
-    print(f"You are right! Current score: {score}.")
-else:
-    print(f"Sorry, that is wrong.  Final score: {score}.")
-#Score keeping
+game_should_continue = True
 
 #Make the game repetable
+while game_should_continue:
+
+    #Generate a random account from the game data
+    account_a = random.choice(data)
+    account_b = random.choice(data)
+    if account_a == account_b:
+        account_b = random.choice(data)
+    #Format the account data into printable format
+    print(f"Compare A: {format_data(account_a)}")
+    print(vs)
+    print(f"Compare B: {format_data(account_b)}")
+
+    #Ask user for a guess
+    guess = input("Who has more followers? Type 'A' or 'B': ").lower()
+    #Check if user is correct
+
+    #Get follower count of each account
+    a_follower_account = account_a["follower_count"]
+    b_follower_account = account_b["follower_count"]
+    #Use if statement to check if user is correct
+    is_correct = check_answer(guess, a_follower_account, b_follower_account)
+    #Give user feedback on their guess
+    if is_correct:
+        score +=1
+        print(f"You are right! Current score: {score}.")
+    else:
+        print(f"Sorry, that is wrong.  Final score: {score}.")
+
+
 
 #Making account at position B become the next account at position A
 
