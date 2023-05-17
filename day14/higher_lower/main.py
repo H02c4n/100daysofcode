@@ -27,7 +27,8 @@ guess = input("Who has more followers? Type 'A' or 'B': ").lower()
 #Check if user is correct
 
 #Get follower count of each account
-
+a_follower_account = account_a["follower_count"]
+b_follower_account = account_b["follower_count"]
 #Use if statement to check if user is correct
 
 #Give user feedback on their guess
