@@ -18,6 +18,7 @@ def check_answer(guess,a_followers, b_followers):
 
 #Display logo
 print(logo)
+score = 0
 #Generate a random account from the game data
 account_a = random.choice(data)
 account_b = random.choice(data)
@@ -38,7 +39,11 @@ b_follower_account = account_b["follower_count"]
 #Use if statement to check if user is correct
 is_correct = check_answer(guess, a_follower_account, b_follower_account)
 #Give user feedback on their guess
-
+if is_correct:
+    score +=1
+    print("You are right")
+else:
+    print(f"Sorry, that is wrong.  Final score is: {score}")
 #Score keeping
 
 #Make the game repetable
