@@ -1,24 +1,12 @@
-#Display logo
+from logo import logo, vs
+from data import data
+import random
 
-#Generate a random account from the game data
+def format_data(account):
+    """Format the account data into printable format"""
+    account_name = account["name"]
+    account_desc = account["description"]
+    account_country = account["country"]
+    return (f"{account_name}, a {account_desc}, from {account_country}")
 
-#Format the account data into printable format
-
-#Ask user for a guess
-
-#Check if user is correct
-
-#Get follower count of each account
-
-#Use if statement to check if user is correct
-
-#Give user feedback on their guess
-
-#Score keeping
-
-#Make the game repetable
-
-#Making account at position B become the next account at position A
-
-#Clear the screen
 
