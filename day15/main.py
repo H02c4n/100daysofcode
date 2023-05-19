@@ -32,6 +32,14 @@ resources = {
     "coffee": 100,
 }
 
+def is_resource_sufficient(order_ingredients):
+    is_enough = True
+    for item in order_ingredients:
+        if order_ingredients[item] >= resources[item]:
+            print(f"Sorry there is not enough {item}.")
+            is_enough = False
+    return is_enough
+
 is_on = True
 
 
@@ -44,3 +52,6 @@ while is_on:
         print(f"milk: {resources['milk']}ml")
         print(f"coffee: {resources['coffee']}g")
         print(f"Money: ${profit}")
+    else:
+        drink = MENU[choice]
+        is_resource_sufficient(drink["ingredients"])
