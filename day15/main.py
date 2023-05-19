@@ -40,6 +40,15 @@ def is_resource_sufficient(order_ingredients):
             is_enough = False
     return is_enough
 
+def process_coins():
+    """Returns the total calculated from coins inserted."""
+    print("Please insert coins.")
+    total = input("How many quarters?: ") * 0.25
+    total += input("How many quarters?: ") * 0.1
+    total += input("How many quarters?: ") * 0.05
+    total += input("How many quarters?: ") * 0.01
+    return total
+
 is_on = True
 
 
