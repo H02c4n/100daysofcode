@@ -5,6 +5,8 @@ from money_machine import MoneyMachine
 money_machine = MoneyMachine()
 coffe_maker = CoffeeMaker()
 menu = Menu()
+
+
 is_on = True
 
 money_machine.report()
