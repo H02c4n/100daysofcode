@@ -18,3 +18,10 @@ my_screen = Screen()
 print(my_screen.canvheight)
 
 my_screen.exitonclick()
+
+
+print("| Pokemon Name |")
+print("---------------------")
+
+import prettytable
+
