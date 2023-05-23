@@ -1,4 +1,4 @@
-question_list = [
+questions = [
     {"category":"Animals","type":"multiple","difficulty":"easy","question":"What is the fastest  land animal?","correct_answer":"Cheetah","incorrect_answers":["Lion","Thomson&rsquo;s Gazelle","Pronghorn Antelope"]},
     {"category":"Animals","type":"multiple","difficulty":"easy","question":"What is the scientific name for modern day humans?","correct_answer":"Homo Sapiens","incorrect_answers":["Homo Ergaster","Homo Erectus","Homo Neanderthalensis"]},
     {"category":"Animals","type":"multiple","difficulty":"easy","question":"The K\u0101k\u0101p\u014d is a large, flightless, nocturnal parrot native to which country?","correct_answer":"New Zealand","incorrect_answers":["South Africa","Australia","Madagascar"]},
