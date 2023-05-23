@@ -37,4 +37,5 @@ class Quiz:
             print("You got it right")
         else:
             print("That is wrong")
-        print(self.score)
+        print(f"The correct answer was: {correct_answer}")
+        print(f"Tour current score is : {self.score}/{self.question_number}")
