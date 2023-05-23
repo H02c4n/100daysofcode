@@ -16,6 +16,7 @@ class Quiz:
 
     def get_question(self):
         current_question = self.question_list[self.question_number]
+        self.question_number += 1
         answers = current_question.wrong_answers
         answers.append(current_question.correct_answer)
         random.shuffle(answers)
