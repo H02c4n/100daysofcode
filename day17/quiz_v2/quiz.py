@@ -20,7 +20,7 @@ class Quiz:
         answers = current_question.wrong_answers
         answers.append(current_question.correct_answer)
         random.shuffle(answers)
-        user_answer = input(f"Q.{self.question_number + 1} : {current_question.question_text}\nA:{answers[0]}\nB:{answers[1]}\nC:{answers[2]}\nD:{answers[3]}\nYour answer (A-B-C-D):").lower()
+        user_answer = input(f"Q.{self.question_number} : {current_question.question_text}\nA:{answers[0]}\nB:{answers[1]}\nC:{answers[2]}\nD:{answers[3]}\nYour answer (A-B-C-D):").lower()
         if user_answer == "a":
             user_answer = answers[0]
         elif user_answer == "b":
@@ -30,7 +30,7 @@ class Quiz:
         elif user_answer == "d":
             user_answer = answers[3]
         else:
-            user_answer
+            user_answer = user_answer
 
         self.check_answer(user_answer, current_question.correct_answer)
 
@@ -44,4 +44,4 @@ class Quiz:
         else:
             print("That is wrong")
         print(f"The correct answer was: {correct_answer}")
-        print(f"Tour current score is : {self.score}/{self.question_number}")
+        print(f"Your current score is : {self.score}/{self.question_number}")

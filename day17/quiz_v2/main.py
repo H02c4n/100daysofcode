@@ -4,14 +4,17 @@ from data import questions
 
 
 
-questions_bank = []
+question_bank = []
 
 for q in questions:
     question = Question(q_text=q["question"], c_answer=q["correct_answer"], w_answers=q["incorrect_answers"])
-    questions_bank.append(question)
+    question_bank.append(question)
 
-quiz = Quiz(questions_bank)
+new_quiz = Quiz(question_bank)
 
 
-while quiz.still_has_questions:
-    quiz.get_question()
+while new_quiz.still_has_questions():
+    new_quiz.get_question()
+
+print("You hace completed the quiz")
+print(f"Your final score was: {new_quiz.score}/{len(question_bank)}")
