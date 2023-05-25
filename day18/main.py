@@ -33,7 +33,7 @@ colors = ["CornflowerBlue", "DarkOrchid", "IndianRed", "DeepSkyBlue", "LightSeaG
 #     draw_shape(shape_side)
 
 
-#! Draw a random walk
+# #! Draw a random walk
 
 colormode(255)
 
@@ -43,15 +43,45 @@ def random_color():
     b = random.randint(0,255)
     return (r,g,b)
 
-directions =[0,90,180,270]
-timmy.pensize(10)
-timmy.speed("fastest")
+# directions =[0,90,180,270]
+# timmy.pensize(10)
+# timmy.speed("fastest")
 
-for _ in range(200):
-    timmy.color(random_color())
-    #timmy.color(random.choice(colors))
-    timmy.forward(30)
-    timmy.setheading(random.choice(directions))
+# for _ in range(200):
+#     timmy.color(random_color())
+#     #timmy.color(random.choice(colors))
+#     timmy.forward(30)
+#     timmy.setheading(random.choice(directions))
+
+
+#! Draw a spirograph
+timmy.speed(0)
+
+def draw_spirograph(size_of_gap):
+    for _ in range(int(360/size_of_gap)):
+        timmy.color(random_color())
+        timmy.circle(100)
+        timmy.setheading(timmy.heading()+size_of_gap)
+
+
+draw_spirograph(7)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
