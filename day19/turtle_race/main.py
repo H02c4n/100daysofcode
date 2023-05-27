@@ -11,7 +11,7 @@ y_pos = [-70,-40,-10,20,50,80]
 
 for turtle_index in range(0,6):
     tim = Turtle(shape="turtle")
-    tim.color(random.choice(colors))
+    tim.color(colors[turtle_index])
     tim.penup()
     tim.goto(x=-230 , y=y_pos[turtle_index])
 
