@@ -24,9 +24,9 @@ class Snake:
 
 
     def move(self):
-        for seg_num in range(len(self.segments) -1, 0, -1):
-            new_x = self.segments[seg_num-1].xcor()
-            new_y = self.segments[seg_num-1].ycor()
+        for seg_num in range(len(self.segments) - 1, 0, -1):
+            new_x = self.segments[seg_num - 1].xcor()
+            new_y = self.segments[seg_num - 1].ycor()
             self.segments[seg_num].goto(new_x, new_y)
         self.head.forward(MOVE_DISTANCE)
 
@@ -45,5 +45,5 @@ class Snake:
             self.head.setheading(LEFT)
 
     def right(self):
-        if self.hea.heading() != LEFT:
+        if self.head.heading() != LEFT:
             self.head.setheading(RIGHT)
