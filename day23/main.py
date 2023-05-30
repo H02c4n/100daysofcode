@@ -15,6 +15,7 @@ screen.tracer(0)
 
 timmy = Player()
 car_manager = CarManager()
+scoreboard = Scoreboard()
 
 
 screen.listen()
@@ -40,6 +41,7 @@ while game_is_on:
     if timmy.is_at_finish_line():
         timmy.go_to_start()
         car_manager.level_up()
+        
 
 
 
