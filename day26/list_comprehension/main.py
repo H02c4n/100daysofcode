@@ -7,3 +7,7 @@ name = "Halil"
 letters = [l for l in name]
 
 print(letters)
+
+range_list = [num*2 for num in range(1,5)]
+
+print(range_list)
