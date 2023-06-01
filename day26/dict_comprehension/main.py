@@ -25,3 +25,7 @@ print(word_list)
 result = {word:len(word) for word in word_list}
 
 print(result)
+
+##? Or just one line
+
+print({word:len(word) for word in sentence.split()})
