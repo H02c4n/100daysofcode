@@ -20,3 +20,7 @@ print(short_names)
 
 name_has_a_letter = [name for name in names if name.__contains__("a")]
 print(name_has_a_letter)
+
+UpperCaseAndLongName = [name.upper() for name in names if len(name) > 5]
+
+print(UpperCaseAndLongName)
