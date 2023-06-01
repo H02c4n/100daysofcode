@@ -17,3 +17,6 @@ names = ["Alex", "Beth", "Caroline", "Dave", "Eleanor", "Freddie"]
 short_names = [name for name in names if len(name) < 5]
 
 print(short_names)
+
+name_has_a_letter = [name for name in names if name.__contains__("a")]
+print(name_has_a_letter)
