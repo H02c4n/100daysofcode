@@ -35,3 +35,16 @@ print(squared_numbers)
 even_numbers = [n for n in numbers if n % 2 == 0]
 
 print(even_numbers)
+
+
+#######################Data Overlap#####################################
+
+with open("file1.txt") as file1:
+    nums1 = file1.readlines()
+
+with open("file2.txt") as file2:
+    nums2 = file2.readlines()
+
+result = [int(num) for num in nums1 if num in nums2]
+
+print(result)
