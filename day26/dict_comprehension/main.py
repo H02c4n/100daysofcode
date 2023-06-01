@@ -46,3 +46,17 @@ weather_c ={
 weather_f ={day:(degree)*9/5+32 for (day,degree) in weather_c.items()}
 
 print(weather_f)
+
+
+##! Itarete Pandas DataFrame 
+
+
+import pandas
+
+student_dict={"Israfil":96, "Cebrail":98, "Mikail":94}
+
+student_data_frame = pandas.DataFrame(student_dict)
+print(student_data_frame)
+
+for (index,row) in student_data_frame.iterrows():
+    print(row)
