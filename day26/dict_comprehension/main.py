@@ -14,3 +14,14 @@ print(students_score)
 passed_students = {name:score for (name, score) in students_score.items() if score > 50 }
 
 print(passed_students)
+
+##! In the given sentence and calculates the number of letters in each word. ##
+sentence = "What is the Airspeed Velocity of an Unladen Swallow?"
+
+word_list = sentence.split()
+print(word_list)
+
+
+result = {word:len(word) for word in word_list}
+
+print(result)
