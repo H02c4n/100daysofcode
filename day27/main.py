@@ -16,10 +16,18 @@ my_label.config(text="New Text")
 
 def button_clicked():
     print("I got clicked")
-    my_label.config(text="Last version")
+    input_text = input.get()
+    my_label.config(text=input_text)
 
 
 button = Button(text="Calculate", command=button_clicked)
 button.pack()
+
+
+#Entry
+input = Entry(width=10)
+input.pack()
+print(input.get())
+
 
 window.mainloop()
