@@ -10,6 +10,14 @@ label = Label(text="This is old text")
 label.config(text="This is new text")
 label.pack()
 
+#Buttons
+def action():
+    print("Do something")
 
+
+#calls action when pressed
+
+button = Button(text="Click me", command=action)
+button.pack()
 
 
