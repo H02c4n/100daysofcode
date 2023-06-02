@@ -23,3 +23,15 @@ def calculate(n, **kwargs):
 
 
 calculate(2, add=3, multiply=5)
+
+
+class Car:
+    def __init__(self, **kw):
+        self.make = kw["make"]
+        self.model = kw.get("model")
+        self.colour = kw.get("colour")
+        self.seat = kw["seat"]
+
+my_car = Car(make="nissan", model="GT_R", seat=4)
+
+print(my_car.model)
