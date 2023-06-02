@@ -10,6 +10,7 @@ my_label.pack()  # expand="True" or side="left"
 
 my_label["text"] = "new Text"
 my_label.config(text="New Text")
+my_label.place(x=0, y=0)
 
 
 # Button
