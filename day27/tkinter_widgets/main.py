@@ -30,3 +30,15 @@ print(entry.get())
 entry.pack()
 
 
+#Text
+text = Text(height=5, width=30)
+#Puts cursor in textbox
+text.focus()
+#Adds some text to begin
+text.insert(END, "Example of multi-line text entry")
+#Gets current value in textbox at line 1 , character 0
+print(text.get("1.0", END))
+text.pack()
+
+
+
