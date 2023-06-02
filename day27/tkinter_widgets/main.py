@@ -50,4 +50,13 @@ spinbox = Spinbox(from_=0, to=10, command=spinbox_used)
 spinbox.pack()
 
 
+#Scale 
+#called with current scale value
+def scale_used(value):
+    print(value)
+
+scale = Scale(from_=0, to=100, command=scale_used)
+scale.pack()
+
+
 
