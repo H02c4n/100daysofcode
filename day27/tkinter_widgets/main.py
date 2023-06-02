@@ -58,5 +58,18 @@ def scale_used(value):
 scale = Scale(from_=0, to=100, command=scale_used)
 scale.pack()
 
+#Checkbutton
+
+def checkbutton_used():
+    #Print 1 if On button checked, otherwise 0.
+    print(checked_state.get())
+
+#variable to hold on to checked state, o is off,  is on
+checked_state = IntVar()
+checked_button = Checkbutton(text="Is on?", variable=checked_state, command=checkbutton_used)
+checked_state.get()
+checked_button.pack()
+
+
 
 
