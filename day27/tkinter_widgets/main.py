@@ -20,4 +20,13 @@ def action():
 button = Button(text="Click me", command=action)
 button.pack()
 
+#Entris
+
+entry = Entry(width=30)
+#add some text to begin with
+entry.insert(END, string="Some text to begin with")
+#gets text in entry
+print(entry.get())
+entry.pack()
+
 
