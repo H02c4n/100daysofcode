@@ -4,9 +4,9 @@ import datetime as dt
 import random
 
 subject = "Email subject"
-sender = "halilozcan4242@gmail.com"
-recipients = ["svtr.hozcan@gmail.com"]
-password = "gwwmbuczngemqywc"
+sender = "sender@gamil.com"
+recipients = ["recipient@gmail.com"]
+password = "password"
 
 
 now = dt.datetime.now()
