@@ -1,5 +1,6 @@
 from tkinter import *
 from quiz_brain import QuizBrain
+
 THEME_COLOR = "#375362"
 
 
@@ -15,7 +16,8 @@ class QuizInterface:
         self.score_label.grid(row=0, column=1)
 
         self.canvas = Canvas(width=300, height=250, bg="white")
-        self.question_text = self.canvas.create_text(150, 125, width=280, text="Some question text", fill=THEME_COLOR, font=("Ariel", 20, "italic"))
+        self.question_text = self.canvas.create_text(150, 125, width=280, text="Some question text", fill=THEME_COLOR,
+                                                     font=("Ariel", 20, "italic"))
         self.canvas.grid(row=1, column=0, columnspan=2, pady=50)
 
         true_image = PhotoImage(file="images/true.png")
@@ -29,7 +31,6 @@ class QuizInterface:
         self.get_next_question()
 
         self.window.mainloop()
-
 
     def get_next_question(self):
         q_text = self.quiz.next_question()
