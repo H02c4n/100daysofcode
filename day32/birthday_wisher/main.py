@@ -18,4 +18,3 @@ if today_tuple in birthdays_dict:
     with smtplib.SMTP_SSL("smtp.gmail.com, 465") as conn:
         conn.login("email@gmail.com", "password")
         conn.sendmail(from_addr="email@gmail.com", to_addrs=birthday_person["email"], msg=f"Subject:Happy Birthday!\n\n{contents}")
-        
